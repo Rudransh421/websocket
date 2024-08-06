@@ -1,0 +1,112 @@
+/* Basic reset and container styles */
+body {
+    background-image: linear-gradient(rgb(105, 68, 105), rgb(128, 102, 145));
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 955px;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    height: 60vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.msg {
+    width: fit-content;
+    padding: 10px;
+    margin: 6px;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 80%;
+    position: relative;
+}
+
+.left {
+    background-color: aqua;
+    float: left;
+    clear: both;
+}
+
+.right {
+    background-color: lightgreen;
+    float: right;
+    clear: both;
+}
+
+.system {
+    background-color: #f0f0f0;
+    color: #555;
+    text-align: center;
+    width: 100%;
+}
+
+.send {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 2px solid black;
+    padding: 10px;
+}
+
+/* Styling for the form container */
+#send-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    max-width: 985px;
+    margin: auto;
+}
+
+/* Styling for text input */
+#msgin {
+    width: 150%;
+    border: 2px solid black;
+    padding: 10px;
+    margin-right: 5px; /* Reduced margin to bring elements closer */
+    border-radius: 6px;
+}
+
+/* Styling for file input */
+#fileInput {
+    display: none; /* Hide default file input */
+}
+
+.custom-file-label {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #ddd;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-right: 5px; /* Reduced margin to bring elements closer */
+}
+
+/* Styling for the file input button */
+#fileInput + .custom-file-label::after {
+    content: 'Choose File';
+}
+
+/* Styling for button */
+.btn {
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 40px;
+    padding: 0 15px;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+/* Add some margin and adjust button styles */
+#send-container .btn {
+    margin-left: 5px; /* Reduced margin to bring elements closer */
+}

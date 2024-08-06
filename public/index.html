@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Module</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/chat.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="logo">
+        <img src="logo.png" alt="Logo">
+    </nav>
+
+    <div class="container">
+        <!-- Messages will be appended here dynamically -->
+    </div>
+
+    <div class="send">
+        <form id="send-container">
+            <input type="text" name="msgin" id="msgin" placeholder="Type your message...">
+            <input type="file" id="fileInput">
+            <label for="fileInput" class="custom-file-label"></label>
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
